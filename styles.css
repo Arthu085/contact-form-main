@@ -179,3 +179,35 @@ button:hover {
     cursor: pointer;
     background-color: hsl(169, 81%, 19%);
 }
+
+.active {
+    background-color: hsl(146, 55%, 87%);
+}
+
+.alert {
+    padding: 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 5px;
+    display: none;
+}
+
+.alert .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.alert .closebtn:hover {
+    color: black;
+}

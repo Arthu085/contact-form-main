@@ -11,10 +11,13 @@
 
 </head>
 <body>
-  <main>
+  <main> 
+    <div class="alert success" id="successMessage" style="display: none;">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong>Message Sent!</strong> Thanks for completing the form. We'll be in touch soon!
+    </div>
     <h1>Contact Us</h1>
-
-    <form>
+    <form onsubmit="handleSubmit(event)">
       <div class="form-first-last">
         <div class="form-first">
           <label for="firstName">First Name <span>*</span></label>
@@ -32,11 +35,11 @@
       <div class="form-query">
         <label>Query Type <span>*</span></label>
         <div class="form-query-flex">
-          <div class="general-enquiry">
+          <div class="general-enquiry" onclick="selectOption('general')">
             <input type="radio" id="general" name="queryType" value="general" required title="Please select a query type">
             <label for="general">General Enquiry</label>
           </div>
-          <div class="support-request">
+          <div class="support-request" onclick="selectOption('support')">
             <input type="radio" id="support" name="queryType" value="support" required title="Please select a query type">
             <label for="support">Support Request</label>
           </div>
@@ -54,7 +57,7 @@
         <button type="submit">Submit</button>
       </div>
     </form>
-
   </main>
+  <script src="func.js"></script>
 </body>
 </html>
