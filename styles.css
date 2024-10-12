@@ -186,7 +186,7 @@ button:hover {
 
 .alert {
     padding: 20px;
-    background-color: #4CAF50; /* Green */
+    background-color: #428d44; /* Green */
     color: white;
     text-align: center;
     position: fixed;
@@ -206,6 +206,7 @@ button:hover {
     font-size: 22px;
     line-height: 20px;
     cursor: pointer;
+    transition: 1.5s;
 }
 
 .alert .closebtn:hover {
